@@ -91,7 +91,7 @@ class TicTacToe
   end
 
 
-  def winner (board)
+  def winner
     index = []
     index = won?(board)
     if index == false
@@ -105,7 +105,7 @@ class TicTacToe
     end
   end
 
-  def play(board)
+  def play
     until over?(board) == true
       turn(board)
     end
